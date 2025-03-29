@@ -1,0 +1,80 @@
+.tudo{
+    width: 100%;
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    width: 210px;
+    background-color: #8E9DCC;
+    border: 2px solid #6e6e6e;
+    padding: 15px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.visor{
+    width: 100%;
+    background-color: #5b6081;
+    color: #ffffff;
+    height: 30px;
+    border: 0;
+    border-radius: 12px;
+}
+
+.container-botoes{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.linha{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.botao{
+    color: #1f1f1f;
+    font-size: 17px;
+    width: 45px;
+    height: 30px;
+    border: 0;
+    border-radius: 15px;
+    transition: background-color 0.1s ease;
+}
+
+.numero{
+    background-color: rgba(217, 219, 241, 0.6);
+}
+.numero:hover{
+    background-color: rgb(217, 219, 241);
+}
+
+.sinal{
+    background-color: rgba(249, 249, 237, 0.6);
+}
+.sinal:hover{
+    background-color: rgb(249, 249, 237);
+}
+
+
+.igual{
+    background-color: rgba(219, 244, 167, 0.6);
+}
+.igual:hover{
+    background-color: rgb(219, 244, 167);
+}
+
+.limpar{
+    background-color: rgba(254, 255, 215, 0.6);
+}
+.limpar:hover{
+    background-color: rgb(254, 255, 215);
+}

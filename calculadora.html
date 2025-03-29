@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="calculadora.jpg">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora da Talita :D</title>
+</head>
+<body>
+    <div class="tudo">
+        <form name="Calc">
+            <!-- Visor da calculadora: -->
+            <input type="text" name="Input" class="visor">
+
+            <div class="container-botoes">
+                <div class="linha">
+                    <input type="button" value="1" class="botao numero" name="one" onclick="Calc.Input.value += '1'">
+                
+                    <input type="button" value="2" class="botao numero" name="two" onclick="Calc.Input.value += '2'">
+                               
+                    <input type="button" value="3" class="botao numero" name="three" onclick="Calc.Input.value += '3'">
+                         
+                    <input type="button" value="+" class="botao sinal" name="plus" onclick="Calc.Input.value += '+'">
+                </div>
+                    
+                <div class="linha">        
+                    <input type="button" value="4" class="botao numero" name="four" onclick="Calc.Input.value += '4'">
+
+                    <input type="button" value="5" class="botao numero" name="five" onclick="Calc.Input.value += '5'">
+            
+                    <input type="button" value="6" class="botao numero" name="six" onclick="Calc.Input.value += '6'">
+
+                    <input type="button" value="-" class="botao sinal" name="minus" onclick="Calc.Input.value += '-'">
+                </div>
+                    
+                <div class="linha">
+                    <input type="button" value="7" class="botao numero" name="seven" onclick="Calc.Input.value += '7'">
+            
+                    <input type="button" value="8" class="botao numero" name="eight" onclick="Calc.Input.value += '8'">
+            
+                    <input type="button" value="9" class="botao numero" name="nine"  onclick="Calc.Input.value += '9'">
+            
+                    <input type="button" value="x" class="botao sinal" name="times" onclick="Calc.Input.value += '*'">    
+                </div>
+                    
+                <div class="linha">          
+                    <input type="button" value="C" class="botao limpar" name="clear" onclick="Calc.Input.value = ''">
+                
+                    <input type="button" value="0" class="botao numero" name="zero" onclick="Calc.Input.value += '0'">
+                
+                    <input type="button" value="=" class="botao igual" name="DoIt" onclick="Calc.Input.value = eval(Calc.Input.value)">
+                    <!--o eval pega o campo do visor e interpreta como código JavaScript, executando a conta-->
+                
+                    <input type="button" value="/" class="botao sinal" name="div" onclick="Calc.Input.value += '/'">
+                </div>            
+            </div>            
+        </form>
+    </div>
+</body>
+</html>
